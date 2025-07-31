@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Lecteur Multimedias</string>
+    <string name="login_title">Connexion</string>
+    <string name="username_hint">Nom d\'utilisateur</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="default_account">Compte par défaut: admin / admin123</string>
+
+    <!-- Admin Dashboard -->
+    <string name="welcome_admin">Bienvenue, %1$s</string>
+    <string name="create_user">Créer un utilisateur</string>
+    <string name="users_list">Liste des utilisateurs</string>
+    <string name="long_press_delete">Appui long pour supprimer un utilisateur</string>
+    <string name="logout">Déconnexion</string>
+
+    <!-- Media Player -->
+    <string name="welcome_user">Bienvenue, %1$s</string>
+    <string name="select_media">Sélectionner un fichier</string>
+    <string name="play">Lecture</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Arrêter</string>
+    <string name="no_file_selected">Aucun fichier sélectionné</string>
+
+    <!-- Messages -->
+    <string name="empty_fields">Veuillez remplir tous les champs</string>
+    <string name="invalid_credentials">Nom d\'utilisateur ou mot de passe incorrect</string>
+    <string name="user_exists">Ce nom d\'utilisateur existe déjà</string>
+    <string name="user_created">Utilisateur créé avec succès</string>
+    <string name="user_deleted">Utilisateur supprimé</string>
+    <string name="cannot_delete_admin">Impossible de supprimer un super-admin</string>
+    <string name="permission_required">Permission requise pour accéder aux fichiers</string>
+    <string name="unsupported_format">Format de fichier non supporté</string>
+    <string name="audio_ready">Audio prêt à être lu</string>
+    <string name="video_ready">Vidéo prête à être lue</string>
+    <string name="audio_load_error">Erreur lors du chargement de l\'audio</string>
+
+    <!-- Dialog -->
+    <string name="create_user_dialog_title">Créer un utilisateur</string>
+    <string name="delete_user_dialog_title">Supprimer l\'utilisateur</string>
+    <string name="delete_user_message">Êtes-vous sûr de vouloir supprimer l\'utilisateur \'%1$s\' ?</string>
+    <string name="create">Créer</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+</resources>
