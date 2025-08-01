@@ -92,6 +92,5 @@ sealed class Screen {
 @Composable
 fun DefaultPreview() {
     LecteurMultimediasTheme {
-        // Preview avec une base de données mock
     }
 }

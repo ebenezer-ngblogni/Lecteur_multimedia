@@ -3,13 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Permissions pour accéder aux fichiers multimédias -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 
-    <!-- Permission pour Android 13+ (API 33+) -->
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"
-        android:maxSdkVersion="32" />
+    <!-- Permission spéciale pour MIUI et autres surcouches -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!-- Permission pour accéder au stockage sur les anciennes versions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- Queries pour détecter les apps de gestion de fichiers -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
